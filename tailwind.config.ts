@@ -21,6 +21,10 @@ const config: Config = {
         primary: "#00398D",
         secondary: "#00398D60",
       },
+      borderColor: {
+        primary: "#00398D",
+        secondary: "#00000080",
+      },
     },
   },
   plugins: [],

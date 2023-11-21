@@ -1,12 +1,15 @@
 import { Category } from "@/components/Category"
+import { Event } from "@/components/Event"
 import { Schedule } from "@/components/Schedule"
+import SocialMedia from "@/components/SocialMedia"
 import Title from "@/components/Title"
 import { categories } from "@/mock/categories"
+import { events } from "@/mock/events"
 import { schudules } from "@/mock/schedules"
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-10">
+    <main className="m-auto flex max-w-screen-xl flex-col items-center gap-10">
       <section className="flex h-fit w-full flex-col gap-5">
         <Title
           title="Navegue por categoria"
@@ -39,6 +42,24 @@ export default function Home() {
             />
           ))}
         </Schedule.Grid>
+      </section>
+      <SocialMedia />
+      <section className="flex h-fit w-full flex-col gap-5">
+        <Title
+          title="Eventos Recentes"
+          subTitle="Veja abaixo informação sobre os eventos recentes:"
+        />
+        <Event.Grid>
+          {events.map((event, indx) => (
+            <Event.Card
+              key={indx}
+              title={event.title}
+              image={event.image}
+              description={event.description}
+              type={event.type}
+            />
+          ))}
+        </Event.Grid>
       </section>
     </main>
   )

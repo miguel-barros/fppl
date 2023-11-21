@@ -9,7 +9,7 @@ interface CardProps {
 export default function Card({ title, date, image }: CardProps) {
   return (
     <div className="h-96 w-96 rounded-lg border shadow-xl ">
-      <div className="bg-primary flex h-12 w-full items-center justify-center rounded-t-lg">
+      <div className="flex h-12 w-full items-center justify-center rounded-t-lg bg-primary">
         <span className="text-lg font-medium text-white">{date}</span>
       </div>
       <div className="h-52 w-full bg-secondary">{image}</div>
