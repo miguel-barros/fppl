@@ -2,7 +2,6 @@ import { type CardProps } from "@/components/Event/card"
 
 export const events = [
   {
-    image: "",
     title:
       "Apresentação de abertura do campeonato de Lançamento e Long Casting - FPPL",
     description:
@@ -10,17 +9,14 @@ export const events = [
     type: "long",
   },
   {
-    image: "",
     title: "1º Evento",
     description: "",
   },
   {
-    image: "",
     title: "2º Evento",
     description: "",
   },
   {
-    image: "",
     title: "3º Evento",
     description: "",
   },

@@ -55,7 +55,6 @@ export default function Home() {
             <Event.Card
               key={indx}
               title={event.title}
-              image={event.image}
               description={event.description}
               type={event.type}
             />
