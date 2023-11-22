@@ -3,7 +3,6 @@ import React from "react"
 export interface CardProps {
   type: "long" | "short"
   title: string
-  image: string
   description?: string
   className?: string
 }
@@ -11,7 +10,6 @@ export interface CardProps {
 export default function Card({
   type = "short",
   title,
-  image,
   description,
   className,
 }: CardProps) {
