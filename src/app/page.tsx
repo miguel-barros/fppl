@@ -23,7 +23,7 @@ export default function Home() {
               icon={category.icon}
               title={category.title}
               description={category.description}
-              className="basis-1/5"
+              className="basis-1/5 max-sm:snap-center max-sm:px-16"
             />
           ))}
         </Category.Grid>

@@ -6,7 +6,7 @@ interface GridProps {
 
 export default function Grid({ children }: GridProps) {
   return (
-    <div className="mt-2 flex h-fit w-full justify-center gap-12">
+    <div className="mt-2 flex h-fit w-full justify-center gap-12 max-sm:flex-wrap">
       {children}
     </div>
   )
