@@ -17,11 +17,15 @@ export default function Card({
 }: CardProps) {
   if (type === "long") {
     return (
-      <div className={`flex w-full items-center gap-8 ${className}`}>
+      <div
+        className={`flex w-full items-center gap-8 ${className} max-sm:flex-wrap`}
+      >
         <div className="h-[423px] w-[830px] rounded-lg bg-secondary"></div>
-        <div className="flex w-1/3 flex-col gap-3">
-          <span className="text-2xl text-primary">{title}</span>
-          <span className="text-lg text-secondary">{description}</span>
+        <div className="flex w-1/3 flex-col gap-3 max-sm:w-full max-sm:text-center">
+          <span className="text-2xl text-primary max-sm:text-xl">{title}</span>
+          <span className="text-lg text-secondary max-sm:text-base">
+            {description}
+          </span>
         </div>
       </div>
     )
