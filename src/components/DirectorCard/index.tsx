@@ -22,11 +22,11 @@ export interface IDirectorCardProps {
 export default function DirectorCard({ director, theme }: IDirectorCardProps) {
   return (
     <article
-      className={`flex h-fit w-full flex-col md:flex-row md:w-[896px] items-center justify-between rounded-lg px-10 py-4 shadow-lg ${
+      className={`flex h-fit w-full flex-col items-center justify-between rounded-lg px-10 py-4 shadow-lg md:w-[896px] md:flex-row ${
         theme === "blue" ? " bg-primary" : "bg-white"
       }`}
     >
-      <div className="flex items-center gap-6 flex-col md:flex-row">
+      <div className="flex flex-col items-center gap-6 md:flex-row">
         <Image
           src={director.image}
           alt={director.name}
