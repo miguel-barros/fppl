@@ -5,7 +5,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
     value: string
     label: string
   }[]
-  title: string
+  title?: string
 }
 
 export default function Select({ options, title, ...rest }: SelectProps) {
@@ -14,7 +14,7 @@ export default function Select({ options, title, ...rest }: SelectProps) {
       <span className="text-md font-medium text-primary max-sm:text-center">
         {title}
       </span>
-      <div className="flex h-16 w-full gap-5 max-sm:snap-x max-sm:overflow-hidden max-sm:overflow-x-auto">
+      <div className="flex h-full max-h-16 w-fit max-w-full gap-5 max-sm:snap-x max-sm:overflow-hidden max-sm:overflow-x-auto">
         {options.map((option) => (
           <select
             key={option.value}

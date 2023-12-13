@@ -32,6 +32,7 @@ export default function Champions() {
             <Information.Text
               label="Nota de agradecimento:"
               description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum est ac tellus pellentesque, ac faucibus urna bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum est ac tellus pellentesque, ac faucibus urna bibendum.”"
+              className="text-justify"
             />
           </Information.Grid>
         </div>

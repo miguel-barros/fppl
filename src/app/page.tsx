@@ -42,7 +42,12 @@ export default function Home() {
           ))}
         </Schedule.Grid>
       </section>
-      <SocialMedia />
+      <SocialMedia
+        links={{
+          facebook: "",
+          instagram: "",
+        }}
+      />
       <section className="flex h-fit w-full flex-col gap-5">
         <Title
           title="Eventos Recentes"

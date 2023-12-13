@@ -1,8 +1,15 @@
 import React from "react"
 
-export default function Grid({ children }: { children: React.ReactNode }) {
+interface GridProps {
+  children: React.ReactNode
+  className?: string
+}
+
+export default function Grid({ children, className }: GridProps) {
   return (
-    <div className="flex h-full w-full flex-col justify-around max-sm:w-11/12 max-sm:gap-3">
+    <div
+      className={`flex h-full w-full flex-col justify-around max-sm:gap-3 ${className}`}
+    >
       {children}
     </div>
   )
