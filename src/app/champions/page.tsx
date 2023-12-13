@@ -1,3 +1,4 @@
+import { Information } from "@/components/Information"
 import Select from "@/components/Select"
 import Title from "@/components/Title"
 import { selectOptions } from "@/mock/select"
@@ -17,33 +18,22 @@ export default function Champions() {
             options={selectOptions}
             title=" Escolha cada um dos itens a seguir para filtrar a busca de seu campeão"
           />
-          <div className="flex h-full flex-col justify-around">
-            <span className="text-md font-semibold text-secondary">
-              Nome do participante:{" "}
-              <span className="font-medium text-primary">John doe</span>
-            </span>{" "}
-            <span className="text-md font-semibold text-secondary">
-              Idade: <span className="font-medium text-primary">23</span>
-            </span>{" "}
-            <span className="text-md font-semibold text-secondary">
-              Trofeus ganhos:{" "}
-              <span className="font-medium text-primary">6</span>
-            </span>{" "}
-            <span className="text-md font-semibold text-secondary">
-              Clube associado:{" "}
-              <span className="font-medium text-primary">Clube de pesca</span>
-            </span>{" "}
-            <span className="text-md font-semibold text-secondary">
-              Nota de agradecimento:{" "}
-              <span className="font-medium text-primary">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur interdum est ac tellus pellentesque, ac faucibus urna
-                bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Curabitur interdum est ac tellus pellentesque, ac faucibus
-                urna bibendum.”
-              </span>
-            </span>
-          </div>
+          <Information.Grid>
+            <Information.Text
+              label="Nome do participante:"
+              description="John doe"
+            />
+            <Information.Text label="Idade:" description="23" />
+            <Information.Text label="Trofeus ganhos:" description="6" />
+            <Information.Text
+              label="Clube associado:"
+              description="Clube de pesca"
+            />
+            <Information.Text
+              label="Nota de agradecimento:"
+              description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum est ac tellus pellentesque, ac faucibus urna bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum est ac tellus pellentesque, ac faucibus urna bibendum.”"
+            />
+          </Information.Grid>
         </div>
       </div>
     </main>
