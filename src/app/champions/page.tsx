@@ -11,12 +11,12 @@ export default function Champions() {
         title="Campeões"
         subTitle="Aqui você poderá encontrar seu campeão utilizando os filtros de pesquisa"
       />
-      <div className="flex h-fit w-full gap-8">
-        <div className="h-[500px] w-[400px] rounded-lg bg-secondary"></div>
-        <div className="flex flex-1 flex-col gap-5">
+      <div className="flex h-fit w-full gap-8 max-sm:flex-wrap">
+        <div className="h-[500px] w-[600px] rounded-lg bg-secondary"></div>
+        <div className="flex w-full flex-col gap-5">
           <Select
             options={selectOptions}
-            title=" Escolha cada um dos itens a seguir para filtrar a busca de seu campeão"
+            title="Escolha cada um dos itens a seguir para filtrar a busca de seu campeão"
           />
           <Information.Grid>
             <Information.Text

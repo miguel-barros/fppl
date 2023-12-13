@@ -7,7 +7,7 @@ interface TextProps {
 
 export default function Text({ label, description }: TextProps) {
   return (
-    <span className="text-md font-semibold text-secondary">
+    <span className="text-md w-full font-semibold text-secondary">
       {label} <span className="font-medium text-primary">{description}</span>
     </span>
   )
