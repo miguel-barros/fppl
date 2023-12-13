@@ -20,9 +20,7 @@ export default function Home() {
           {categories.map((category, indx) => (
             <Category.Card
               key={indx}
-              icon={category.icon}
-              title={category.title}
-              description={category.description}
+              {...category}
               className="basis-1/5 max-sm:snap-center max-sm:px-16"
             />
           ))}
