@@ -5,7 +5,7 @@ import React from "react"
 
 export default function Page() {
   return (
-    <section className="flex flex-col gap-4 items-center">
+    <section className="flex flex-col items-center gap-4">
       <Title
         title="Diretores"
         subTitle="Aqui você pode entrar em contato e consultar diretamente algum dos nossos diretores"
