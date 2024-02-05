@@ -4,6 +4,7 @@ import { Schedule } from "@/components/Schedule"
 import SocialMedia from "@/components/SocialMedia"
 import TextArea from "@/components/TextArea"
 import Title from "@/components/Title"
+import Warning from "@/components/Warning"
 import { categories } from "@/mock/categories"
 import { events } from "@/mock/events"
 import { schudules } from "@/mock/schedules"
@@ -11,6 +12,10 @@ import { schudules } from "@/mock/schedules"
 export default function Home() {
   return (
     <main className="m-auto flex max-w-screen-xl flex-col items-center gap-10">
+      <Warning
+        title="Convocação de Assembleia geral"
+        link="/docs/convocacao-assembleia-2024.pdf"
+      />
       <section className="flex h-fit w-full flex-col gap-5">
         <Title
           title="Navegue por categoria"
