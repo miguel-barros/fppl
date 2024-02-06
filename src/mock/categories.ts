@@ -6,7 +6,7 @@ import {
   TreeStructure,
   UsersThree,
   ClipboardText,
-  Certificate,
+  // Certificate,
 } from "@phosphor-icons/react/dist/ssr"
 
 export const categories = [
