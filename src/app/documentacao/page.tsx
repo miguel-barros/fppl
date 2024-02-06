@@ -2,9 +2,10 @@ import { Information } from "@/components/Information"
 import Title from "@/components/Title"
 import { fees, regulations } from "@/mock/statutes"
 import { FilePdf } from "@phosphor-icons/react/dist/ssr"
+import Link from "next/link"
 import React from "react"
 
-export default function Statutes() {
+export default function Documentacao() {
   return (
     <main className="m-auto flex max-w-screen-xl flex-col items-center gap-5">
       <Title
@@ -15,15 +16,18 @@ export default function Statutes() {
         <div className="flex w-full flex-col gap-5">
           {regulations.map((regulation, index) => (
             <div className="flex items-center gap-5" key={index}>
-              <span className="flex h-[150px] w-[150px] cursor-pointer items-center justify-center rounded-full bg-primary">
+              <Link
+                href={regulation.link}
+                className="flex h-[150px] w-[150px] cursor-pointer items-center justify-center rounded-full bg-primary"
+              >
                 <FilePdf className="h-5/6 w-11/12 text-white" />
-              </span>
+              </Link>
               <div key={index} className="flex w-6/12 flex-col gap-1">
                 <span className="text-md font-medium text-primary">
                   {regulation.title}
                 </span>
                 <span className="text-md font-medium text-secondary">
-                  Clique para baixar
+                  Clique no icone de PDF para baixar o arquivo
                 </span>
               </div>
             </div>

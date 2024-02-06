@@ -4,7 +4,7 @@ import { results } from "@/mock/results"
 import { FileDoc } from "@phosphor-icons/react/dist/ssr"
 import React from "react"
 
-export default function Results() {
+export default function Resultados() {
   return (
     <main className="m-auto flex max-w-screen-xl flex-col items-center gap-5">
       <Title

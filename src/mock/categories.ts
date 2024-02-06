@@ -6,7 +6,7 @@ import {
   TreeStructure,
   UsersThree,
   ClipboardText,
-  Certificate,
+  // Certificate,
 } from "@phosphor-icons/react/dist/ssr"
 
 export const categories = [
@@ -14,19 +14,19 @@ export const categories = [
     icon: Trophy,
     title: "Campeões",
     description: "Hall dos campeões",
-    route: "/champions",
+    route: "/campeoes",
   },
   {
     icon: CalendarCheck,
     title: "Resultados",
     description: "Historico de resultados oficiais",
-    route: "/results",
+    route: "/resultados",
   },
   {
     icon: Handshake,
     title: "Clubes",
     description: "Hall dos clubes",
-    route: "/clubs",
+    route: "/clubes",
   },
   {
     icon: Waves,
@@ -38,24 +38,24 @@ export const categories = [
     icon: TreeStructure,
     title: "Organograma",
     description: "Organograma da FPPL",
-    route: "/organogram",
+    route: "/organograma",
   },
   {
     icon: UsersThree,
     title: "Diretores",
     description: "Diretores da FPPL",
-    route: "/directors",
+    route: "/diretores",
   },
   {
     icon: ClipboardText,
-    title: "Normas e Estatutos",
+    title: "Documentação",
     description: "Documentação oficial da FPPL",
-    route: "/statutes",
+    route: "/documentacao",
   },
-  {
+  /*{
     icon: Certificate,
     title: "Regulamentos",
     description: "Regulamentos oficiais da FPPL",
     route: "/regulations",
-  },
+  },*/
 ]

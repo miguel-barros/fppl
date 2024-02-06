@@ -4,7 +4,7 @@ import Title from "@/components/Title"
 import { selectOptions } from "@/mock/select"
 import React from "react"
 
-export default function Champions() {
+export default function Campeoes() {
   return (
     <main className="m-auto flex max-w-screen-xl flex-col items-center gap-10">
       <Title

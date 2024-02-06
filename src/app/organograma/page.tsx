@@ -3,14 +3,13 @@ import Image from "next/image"
 import React from "react"
 import organogramaImage from "@/assets/organograma.png"
 
-export default function Organogram() {
+export default function Organograma() {
   return (
     <section className="flex flex-col items-center overflow-hidden">
       <Title
         title="Organograma"
         subTitle="Veja abaixo o organograma da FPPL:"
       />
-
       <Image
         alt="Organograma da FPPL"
         src={organogramaImage}

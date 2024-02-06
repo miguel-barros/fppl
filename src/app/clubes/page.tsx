@@ -4,7 +4,7 @@ import SocialMedia from "@/components/SocialMedia"
 import Title from "@/components/Title"
 import React from "react"
 
-export default function Clubs() {
+export default function Clubes() {
   const selectOptions = [
     {
       label: "Nome do clube",
