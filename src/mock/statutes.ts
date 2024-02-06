@@ -1,15 +1,15 @@
 export const regulations = [
   {
     title: "Regulamentação sobre a PESCA",
-    link: "",
+    link: "/docs/regulamentos/regulamento-pesca-2024.pdf",
   },
   {
     title: "Regulamentação sobre o LANÇAMENTO",
-    link: "",
+    link: "/docs/regulamentos/regulamento-lancamento-2024.pdf",
   },
   {
-    title: "Regulamentação sobre a FPPL",
-    link: "",
+    title: "Regulamentação sobre o Long Casting",
+    link: "/docs/regulamentos/regulamento-casting-2024.pdf",
   },
 ]
 

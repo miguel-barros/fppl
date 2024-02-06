@@ -3,7 +3,7 @@ import Title from "@/components/Title"
 import { directors } from "@/mock/directors"
 import React from "react"
 
-export default function Directors() {
+export default function Diretores() {
   return (
     <section className="flex flex-col items-center gap-4">
       <Title
