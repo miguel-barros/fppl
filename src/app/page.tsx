@@ -37,6 +37,10 @@ export default function Home() {
           title="Agenda"
           subTitle="Encontre as datas confirmadas dos proximos eventos abaixo:"
         />
+        <Warning
+          title="Calendario Oficial"
+          link="/docs/calendario-fppl-2024.pdf"
+        />
         <Schedule.Grid>
           {Object.entries(schudules).map(([month, schedule]) => {
             if (!schedule?.events?.length) return null
