@@ -1,4 +1,3 @@
-"use client"
 import { Category } from "@/components/Category"
 import { Event } from "@/components/Event"
 import { Schedule } from "@/components/Schedule"
