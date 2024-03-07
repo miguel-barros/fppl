@@ -1,3 +1,4 @@
+"use client"
 import { Category } from "@/components/Category"
 import { Event } from "@/components/Event"
 import { Schedule } from "@/components/Schedule"
@@ -37,14 +38,21 @@ export default function Home() {
           subTitle="Encontre as datas confirmadas dos proximos eventos abaixo:"
         />
         <Schedule.Grid>
-          {schudules.map((schedule, indx) => (
-            <Schedule.Card
-              key={indx}
-              title={schedule.title}
-              date={schedule.date}
-              image={schedule.image}
-            />
-          ))}
+          {Object.entries(schudules).map(([month, schedule]) => {
+            if (!schedule?.events?.length) return null
+            return (
+              <div key={month} className="flex gap-12">
+                {schedule.events.map((event, eventIndex) => (
+                  <Schedule.Card
+                    key={eventIndex}
+                    image={event.image}
+                    title={event.title}
+                    date={event.dates}
+                  />
+                ))}
+              </div>
+            )
+          })}
         </Schedule.Grid>
       </section>
       <SocialMedia
