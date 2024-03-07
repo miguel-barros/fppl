@@ -25,7 +25,7 @@ export default function Card({ title, date, image }: CardProps) {
       </div>
       <div className="h-52 w-full bg-secondary">{image}</div>
       <div className="flex h-32 w-full items-center justify-center rounded-b-lg">
-        <span className="text-md text-center font-medium text-primary">
+        <span className="text-md w-11/12 text-center font-medium text-primary">
           {title}
         </span>
       </div>
