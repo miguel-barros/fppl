@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 interface CardProps {
@@ -23,7 +24,15 @@ export default function Card({ title, date, image }: CardProps) {
           {formattedDate()}
         </span>
       </div>
-      <div className="h-52 w-full bg-secondary">{image}</div>
+      <div className="relative flex h-52 w-full items-center justify-center bg-secondary">
+        {image ? (
+          <Image src={image} layout="fill" objectFit="cover" alt="" />
+        ) : (
+          <span className="text-2xl font-medium text-primary opacity-25">
+            Sem imagem
+          </span>
+        )}
+      </div>
       <div className="flex h-32 w-full items-center justify-center rounded-b-lg">
         <span className="text-md w-11/12 text-center font-medium text-primary">
           {title}

@@ -76,6 +76,7 @@ export default function Home() {
               title={event.title}
               description={event.description}
               type={event.type}
+              image={event.image}
             />
           ))}
         </Event.Grid>
@@ -83,7 +84,7 @@ export default function Home() {
       <section>
         <TextArea
           text="A FPPL (Federação Paulista de Pesca e Lançamento) é uma instituição pioneira no estado de São Paulo, tendo sido fundada em 1969. Sua principal missão é promover a prática da pesca amadora e de competição, enquanto trabalha ativamente para difundir e proteger esse esporte em todas as suas vertentes, sem qualquer forma de preconceito. É importante destacar que a FPPL mantém uma estreita parceria com a Confederação Brasileira de Pesca e Lançamento - Nova Pesca Brasil, visando a democratização das decisões e normas no âmbito nacional, contando com a colaboração de todas as Federações Estaduais que fazem parte dessa organização."
-          image="."
+          image="/assets/storage/equipe-fppl.jpeg"
         />
       </section>
     </main>
