@@ -20,7 +20,7 @@ export default function Card({
   return (
     <Link
       href={route}
-      className={`group flex h-80 w-64 cursor-pointer flex-col items-center justify-center gap-14 rounded-lg border shadow-xl shadow-[#00000015] duration-300 ease-in-out hover:-translate-y-2  hover:bg-secondary ${className}`}
+      className={`group flex h-80 w-64 cursor-pointer flex-col items-center justify-center gap-14 rounded-lg border shadow-xl shadow-[#00000015] duration-300 ease-in-out hover:-translate-y-2  hover:bg-secondary ${className || ""}`}
     >
       <Icon
         weight="regular"

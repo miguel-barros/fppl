@@ -8,7 +8,7 @@ interface GridProps {
 export default function Grid({ children, className }: GridProps) {
   return (
     <div
-      className={`flex h-full w-full flex-col justify-around max-sm:gap-3 ${className}`}
+      className={`flex h-full w-full flex-col justify-around max-sm:gap-3 ${className || ""}`}
     >
       {children}
     </div>
