@@ -1,7 +1,7 @@
 import Title from "@/components/Title"
 import Image from "next/image"
 import React from "react"
-import organogramaImage from "@/assets/organograma.png"
+import organogramaImage from "@assets/storage/organograma-fppl.svg"
 
 export default function Organograma() {
   return (
